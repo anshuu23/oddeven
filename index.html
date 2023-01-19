@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd even</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;     
+            background-color: #e3e3e3;
+            font-family: cursive;
+            padding:10%
+        }
+    .divv{
+        height: auto;
+        width: auto;
+        border: 1px solid rgb(230, 230, 230);
+        padding:60px;
+        background-color: #ffffff69;
+        border-radius: 2%;
+        
+        box-shadow: 0 15px 30px -21px rgba(0,0,0,.5);
+    }
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="divv">
+        <h1>program to find wheather number is odd or even</h1>
+    <input id="writenumber" type="text">
+    <button id="hitenter">enter</button>
+<h1 id="h1head"></h1>
+    </div>
+
+
+
+
+    <script>
+        function oddeven(){
+           const textare=document.querySelector("#h1head");
+           const numb=document.querySelector("#writenumber");
+           const numbb=numb.value;
+           const numbe=parseInt(numbb,10);
+            if(numbe%2==0){
+                textare.textContent="number is even";
+            }
+          
+            else {
+                textare.textContent="number is odd";
+            }
+        }
+        const hitent=document.querySelector("#hitenter");
+        hitent.addEventListener("click",oddeven)
+    </script>
+</body>
+</html>
